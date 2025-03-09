@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+    timezone: Australia/Brisbane
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cspell
+    versions:
+    - 5.2.4
+    - 5.3.11
+    - 5.3.12
+    - 5.3.3
+    - 5.3.4
+    - 5.3.7
+    - 5.3.8
+  - dependency-name: ovsx
+    versions:
+    - 0.1.0-next.9321255
